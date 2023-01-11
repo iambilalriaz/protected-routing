@@ -2,12 +2,14 @@
 
 A simple react application in which protected routing has been implemented.
 
+Live demo [here](https://protected-routing.netlify.app/)
+
 ### Pre-requisites:
 
 - Basic knowledge of React
 - Node installed on your system
 
-## Running the project
+### Running the project locally:
 
 Execute this command:
 
