@@ -37,7 +37,11 @@ code {
 }
 .navbar a {
   text-decoration: none;
+  color: rgb(176, 175, 175);
+}
+.selected-item a {
   color: white;
+  font-weight: 600;
 }
 .login-form {
   display: grid;

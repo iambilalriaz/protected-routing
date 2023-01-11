@@ -4,13 +4,21 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='flex'>
-        <p>
+        <p className={window.location.pathname === '/' ? 'selected-item' : ''}>
           <Link to='/'>Home</Link>
         </p>
-        <p>
+        <p
+          className={
+            window.location.pathname === '/about' ? 'selected-item' : ''
+          }
+        >
           <Link to='/about'>About</Link>
         </p>
-        <p>
+        <p
+          className={
+            window.location.pathname === '/contact' ? 'selected-item' : ''
+          }
+        >
           <Link to='/contact'>Contact</Link>
         </p>
       </div>
@@ -20,7 +28,11 @@ const Navbar = () => {
             <Link to='/'>Logout</Link>
           </p>
         ) : (
-          <p>
+          <p
+            className={
+              window.location.pathname === '/login' ? 'selected-item' : ''
+            }
+          >
             <Link to='/login'>Login</Link>
           </p>
         )}
